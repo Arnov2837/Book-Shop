@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router";
 import MainLayOut from "../LayOut/MainLayOut";
 import Book from "../Pages/Book";
 import Home from "../Pages/Home";
+import ErrorPage from "../Pages/ErrorPage";
 
 
  export const router = createBrowserRouter([
@@ -20,5 +21,6 @@ import Home from "../Pages/Home";
         element:<Book></Book>
       }
     ],
+    errorElement:<ErrorPage></ErrorPage>,
   }
 ]);
